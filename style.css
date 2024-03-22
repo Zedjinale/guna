@@ -245,3 +245,8 @@ footer p {
    display: grid;
    grid-template-columns: 1fr 1fr;
 }
+
+.text{ 
+    align-item:center;
+    font-size:25px;
+    
