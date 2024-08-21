@@ -1,0 +1,149 @@
+
+
+.header { 
+
+    border: 2em solid burlywood
+    
+}
+
+
+ol {
+    list-style-position: inside; 
+    text-align: center; 
+    padding: 0; 
+    margin-bottom: 2em;
+}
+
+
+
+
+li{ 
+    margin-bottom: 1em;
+    text-align: center;
+    display: inline-flex;
+
+
+}
+
+.rules {
+
+    font-size: 2em;
+    text-decoration:underline;
+}
+
+
+
+h1,h3{ 
+
+    text-align: center;
+}
+
+
+.word1, .word2, .word3, .word4, .word5, .word6, .word7, .word8, .word9, .word10, .word11, .word12, .word13, .word14 , .word15 { 
+
+    border: rgb(236, 236, 236) double 2em;
+
+}
+
+p { 
+
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+.container { 
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    row-gap: 2em;
+    margin:2em;
+    width: 90em;
+    
+    
+}
+
+.container div {
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.4s; /* Add transition effect */
+    margin: 1em 1em;
+    width: 20em;
+    
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.bomb {
+    background-color: black;
+}
+
+.clicked-blue {
+    background-color: skyblue; 
+}
+
+.clicked-red {
+    background-color: pink; 
+}
+
+.clicked-bomb {
+    background-color: orange;
+}
+
+#shuffleButton, #resetButton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+}
+
+
+#shuffleButton:hover {
+
+    background-color: burlywood;
+    transition-duration: 0.5s;
+    transform-style: ease-in;
+
+}
+
+#shuffleButton:active {
+
+    background-color: chocolate;
+    transition-duration: 0.1s;
+
+}
+
+
+
+.scoreboard {
+    text-align: center;
+    margin: 20px;
+}
+
+.scoreboard span {
+    font-size: 24px;
+    font-weight: bold;
+}
