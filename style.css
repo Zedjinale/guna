@@ -143,6 +143,14 @@ p {
     margin: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    /* Adjustments for mobile screens */
+    .your-element {
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
 .scoreboard span {
     font-size: 24px;
     font-weight: bold;
