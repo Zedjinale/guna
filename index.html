@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სიტყვების თამაში</title>
+    <link rel="stylesheet" href="guesser.css">
+    <link rel="stylesheet" href="explainer.css">
+
+</head>
+<body>
+
+    <h1>Welcome to the Word Game!</h1>
+
+    <h1>მოგესალმებით სიტყვების თამაშში!</h1>
+
+    <div class="header">
+
+    <ol> 
+
+        <p class="rules">თამაშის წესები: </p>
+
+    <li>1.თამაშისთვის საჭიროა მინიმუმ 4 და მაქსიმუმ 8 მოთამაშე.</li>
+    <li>2.გამოსაცნობია ჯამში 15 სიტყვა, აქედან 1 ბომბია, რომლის აფეთქების შემთხვევაშიც რაუნდი სრულდება.</li>
+    <li>3.მოთამაშეები იყოფიან ორ ჯგუფად (წითლები და ლურჯები) და ცდილობენ გამოიცნონ რაც შეიძლება მეტი სიტყვა.</li>
+    <li>4.სიტყვები იყოფა ლურჯ და წითელ კატეგორიებად (7/7), რომელიც მხოლოდ მოკარნახეთათვის არის ცნობილი.</li>
+    <li>5.თითოეულ გუნდს ჰყავს ერთი მოკარნახე, რომლის მიზანიც ერთი სიტყვით რამდენიმე სიტყვის ასოციაციური დაკავშირება და დანარჩენებისთვის ახსნაა</li>
+    <li> 6.მაგალითი: ხელოვნება 3. ციფრი ამ შემთხვევაში კარნახობს მოთამაშეებს თუ რამდენი სიტყვა უნდა დააკავშირონ ერთმანეთს</li>
+    <li> 7.მიეკუთვნება თუ არა ლურჯ ან წითელ ჯგუფს მოცემული სიტყვა მხოლოდ მოკარნახისთვისაა ცნობილი.</li>
+    <li>8.თუ შემთხვევით მოწინააღმდეგის სიტყვა გამოიცანით ქულაც მათ ეწერებათ.</li>
+    <li>9.გუნდი, რომელიც სამ რაუნდში ორს მოიგებს გამარჯვებულია</li>
+
+    </ol>
+
+    </div>
+
+     <H3>გისურვებთ წარმატებებს!</H3>
+     <div class="role-selection">
+        <h3>Play as:</h3>
+        <select id="roleSelect">
+            <option value="" disabled selected>Select your role</option>
+            <option value="Guesser.html">Guesser</option>
+            <option value="explainer.html">Explainer</option>
+        </select>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function() {
+            const role = document.getElementById('roleSelect').value;
+            if (role) {
+                window.location.href = role; // Redirect to the selected role's page
+            } else {
+                alert('Please select a role before starting the game.');
+            }
+        });
+    </script>
+
+
+</body>
+</html>
